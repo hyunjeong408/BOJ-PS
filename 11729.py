@@ -9,8 +9,6 @@ def hanoi(n, f, t, r):
         res = res + hanoi(n-1, r, t, f)
     return res
 
-    
-
 n = int(input())
 ans = hanoi(n, 1, 3, 2)
 print(len(ans))
